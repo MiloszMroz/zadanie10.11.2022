@@ -1,0 +1,66 @@
+body{
+    margin: 0;
+    
+    box-sizing: border-box;
+}
+.body{
+    font-family: Helvetica;
+    max-height: 1080px;
+    max-width: 1920px;
+}
+
+.lewy{
+text-align: center;
+background-color: red;
+color: black;
+height: 1000;
+width: auto;
+grid-area: lewo;
+}
+
+.prawy_gora{
+    background-color: orange;
+    height: 100px;
+    width: auto;
+    text-align: center;
+    grid-area: prawy_gora;
+}
+.prawy_srodek{
+    background-color: orange;
+    height: auto;
+    width: auto;
+    text-align: center;
+    grid-area: prawy_srodek;
+}
+.prawy_dol{
+    text-align: center;
+    background-color: orange;
+    height: 300px;
+    width: auto;
+    text-align: center;
+    grid-area: prawy_dol;
+}
+.prawy_dol form{
+    line-height: 1.5;
+    margin: 30px;
+}
+.stopka{
+    background-color: black;
+    text-align: center;
+    width: auto;
+    height: auto;
+    padding: 20px;
+    grid-area: stopka;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "lewo prawy_gora prawy_gora prawy_gora"
+    "lewo prawy_srodek prawy_srodek prawy_srodek"
+    "lewo prawy_dol prawy_dol prawy_dol"
+    "stopka stopka stopka stopka";
+}
+

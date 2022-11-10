@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Dodaj Gre</title>
+</head>
+<body>
+<div class="grid">
+    <div class="lewy">
+        <h3>Dostęne gatunki gier</h3>
+        <ol>
+            <li>fabularna</li>
+            <li>mmorpg</li>
+            <li>gra akcji</li>
+            <li>wyscigowe</li>
+        </ol>
+        <img src="../zdjecia/gatunki.jpg" style="width:70%; height:auto;">
+        </div>
+
+        <div class="prawy_gora">
+            <h1>Giercowanie</h1>
+        </div>
+    
+        <div class="prawy_srodek">
+
+            <img src="../zdjecia/wypisz.gif" style="width:50%; height:auto;">
+        </div>
+        <div class="prawy_dol">
+                <form action="dodaj.php" method="post">
+            Tytuł<input type="text" name="tytul"><br>
+            Gatunek gry<input type="number" name="gatunek"><br>
+            Opis<input type="text" name="opis"><br>
+            Ocena<input type="number" name="ocena" min="1" max="5"><br>
+            <input type="reset" value="CZYŚĆ">
+            <input type="submit" value="DODAJ">
+        </form>
+
+        </div>
+        <div class="stopka">
+        <a href="../index.html">Powrót do strony głównej</a>
+        <a href="../odczyt/odczyt.php">Baza gier</a>
+        </div>
+</div>
+    
+</body>
+</html>
